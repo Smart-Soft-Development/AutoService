@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:gravity="center"
+    tools:context=".HomeFragment">
+
+
+   <androidx.cardview.widget.CardView
+       android:id="@+id/admin"
+       android:backgroundTint="#F6C019"
+       app:cardCornerRadius="25dp"
+       android:layout_width="match_parent"
+       android:layout_height="80dp">
+       <TextView
+           android:textColor="@color/white"
+           android:fontFamily="sans-serif-black"
+           android:text="Create Account"
+           android:layout_gravity="center"
+           android:textSize="30sp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+   </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/user"
+       android:backgroundTint="#F6C019"
+        android:layout_marginTop="20dp"
+       app:cardCornerRadius="25dp"
+       android:layout_width="match_parent"
+       android:layout_height="80dp">
+       <TextView
+           android:textColor="@color/white"
+           android:fontFamily="sans-serif-black"
+           android:text="Login"
+           android:layout_gravity="center"
+           android:textSize="30sp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+   </androidx.cardview.widget.CardView>
+</LinearLayout>
