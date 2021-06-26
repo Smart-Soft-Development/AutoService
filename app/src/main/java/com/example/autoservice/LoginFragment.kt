@@ -48,6 +48,9 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
 
         }
     }
+    fun tes() {
+
+    }
 
     override fun onDestroy() {
         super.onDestroy()

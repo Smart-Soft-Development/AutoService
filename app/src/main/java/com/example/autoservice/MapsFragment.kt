@@ -54,20 +54,20 @@ class MapsFragment : Fragment(R.layout.fragment_maps) {
 //             fusedLocationProviderClient.lastLocation
 //                 .addOnSuccessListener { location : Location? ->
 //                     // Got last known location. In some rare situations this can be null.
-//                     val chilonzor = LatLng(41.27437363664406, 69.2048837600789)
+                     val chilonzor = LatLng(41.27437363664406, 69.2048837600789)
 //                     Log.e("MAIN", "onViewCreated: ${location?.latitude!!}, ${location.longitude}", )
 //
-////                     val livespace = LatLng(location?.latitude!!, location.longitude)
-//
-////                     googleMap.addMarker(MarkerOptions().position(livespace).title("Tashkent Uzbekistan Oybek metro"))
-//                     googleMap.addMarker(MarkerOptions().position(chilonzor).title("Tashkent Uzbekistan Chilonzro metro"))
-//                     googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(chilonzor,15f))
+//                     val livespace = LatLng(location?.latitude!!, location.longitude)
+
+//                     googleMap.addMarker(MarkerOptions().position(livespace).title("Tashkent Uzbekistan Oybek metro"))
+                     googleMap.addMarker(MarkerOptions().position(chilonzor).title("Tashkent Uzbekistan Chilonzro metro"))
+                     googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(chilonzor,15f))
 //                 }
              fusedLocationProviderClient.lastLocation.addOnSuccessListener {
                  if (it !=null){
                      lastlocation = it
                      var currentlatlang = LatLng(it.latitude,it.longitude)
-//                     cheklovation(currentlatlang)
+
                      map.animateCamera(CameraUpdateFactory.newLatLngZoom(currentlatlang,15f))
                  }
              }
@@ -77,10 +77,6 @@ class MapsFragment : Fragment(R.layout.fragment_maps) {
         binding?.back?.setOnClickListener {
             findNavController().popBackStack()
         }
-
-    }
-
-    private fun checkLocationPermission(){
 
     }
 
