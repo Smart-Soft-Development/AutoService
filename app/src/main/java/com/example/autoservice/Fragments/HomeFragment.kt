@@ -1,4 +1,4 @@
-package com.example.autoservice
+package com.example.autoservice.Fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
+import com.example.autoservice.R
 import com.example.autoservice.databinding.FragmentHomeBinding
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
@@ -23,7 +24,6 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         _binding = FragmentHomeBinding.bind(view)
-
 
 
         binding.admin.setOnClickListener{

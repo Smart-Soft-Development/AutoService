@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    tools:context=".MapsFragment"
     android:orientation="vertical"
-    android:background="#F6C019"
-    android:layout_height="match_parent">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
     <LinearLayout
-        android:layout_marginLeft="10dp"
+        android:background="#F6C019"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize">
         <ImageView
-            android:id="@+id/back"
-            android:src="@drawable/ic_left_arrow"
+            android:src="@drawable/ic_baseline_menu_24"
+
             android:layout_gravity="center"
-            android:layout_width="60dp"
-            android:layout_height="40dp"/>
+            android:layout_width="70dp"
+            android:layout_height="50dp"/>
     </LinearLayout>
 
     <fragment
@@ -24,6 +23,5 @@
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-      >
-    </fragment>
+        tools:context=".AppMap.MapsActivity" />
 </LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".SoSFragment">
+    <LinearLayout
+        android:background="#F6C019"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <ImageView
+            android:src="@drawable/ic_baseline_menu_24"
+            android:layout_gravity="center"
+            android:layout_width="70dp"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <at.markushi.ui.CircleButton
+            android:id="@+id/sosbtn"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_emergency_call"
+            app:cb_color="#CC0000"
+            app:cb_pressedRingWidth="1dip" />
+    </LinearLayout>
+
+
+</LinearLayout>
